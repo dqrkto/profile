@@ -1,0 +1,195 @@
+@font-face {
+    font-family: brickson;
+    src: url('../assets/brickson.otf');
+}
+
+@font-face {
+    font-family: merri;
+    src: url('../assets/Merriweather-Regular.ttf');
+}
+
+.font-merri{
+    font-family: merri;
+}
+
+.background{
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: brickson;
+}
+
+.background .container-fluid{
+    padding-top: 2.5vh; 
+    padding-bottom: 2.5vh;
+}
+
+#boxAll{
+    height: 95vh;
+}
+
+.box-header{
+    margin-bottom: 1vh;
+    font-size: 4vh;
+    height: 4vh;  
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    line-height:1
+}
+
+.card-div{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.card-custom{
+    padding-top: 5vh !important;
+    padding-bottom: 5vh !important;
+    font-size: 2.5vh;
+    height: 12.5vh;
+    line-height: 1;
+}
+
+/*##############################################################################
+################################## Dark Theme ##################################
+##############################################################################*/
+
+/*==================
+==== Background ====
+==================*/
+
+.background{
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../assets/back.gif");
+    background-color: rgb(33, 33, 33);
+    color: white;
+}
+
+/*==================
+====== Button ======
+==================*/
+
+.btn{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: #b1b1b1;
+    color: #ffffff;
+}
+
+.btn:hover {
+    background-color: rgba(54, 54, 54, 0.4);
+    color: #ffffff;
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .15rem rgba(255, 255, 255, 0.3);
+}
+
+.tip:checked:hover + label {
+    color: #000000 !important;
+    background-color: rgba(255, 255, 255, 0.781);
+}
+
+/*==================
+====== Modal =======
+==================*/
+
+.modal .modal-dialog .modal-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/*##############################################################################
+################################## Light Theme #################################
+##############################################################################*/
+
+/*==================
+==== Background ====
+==================*/
+
+.background.light{
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%), url("../assets/backL.gif");
+    background-color: rgb(220, 220, 220);
+    color: black;
+}
+
+/*==================
+====== Button ======
+==================*/
+
+.btn.light{
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-color: #323232;
+    color: #000000;
+}
+
+.btn.light:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn.light:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .15rem rgba(0, 0, 0, 0.3);
+}
+
+/*==================
+====== Border ======
+==================*/
+
+.border.light{
+    padding-top: 2vh; 
+    padding-bottom: 1vh;
+    border-color: #323232!important;
+}
+
+/*==================
+====== Modal =======
+==================*/
+
+.modal .modal-dialog .modal-content.light {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border-color: #323232;
+}
+
+.info {
+    color: rgb(255, 255, 255);
+    background-color: #3030309d;
+    margin-bottom: .5rem;
+    padding-top: 1vh !important; 
+    padding-bottom: 1vh !important;
+    margin-bottom: 1rem !important;
+}
+
+/* Garante que o input "siga" o label e não fique fixo no topo da página */
+.btn-check {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+}
+
+/*##############################################################################
+################################################################################
+##############################################################################*/
+
+/* Scrollbar Custom */
+/* width */
+::-webkit-scrollbar {
+    width: 0.3vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
